@@ -2,7 +2,7 @@
 Projet 1ère année jeu Puissance 4
 
 
-Token : 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
+Token : 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
 
 Thomas : 
 - Le programme affiche les règles et le titre du jeu  X
