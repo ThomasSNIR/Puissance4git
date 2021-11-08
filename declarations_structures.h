@@ -14,5 +14,8 @@ typedef struct // Declarations de 2 structures, 1 pour chaque joueur qui renferm
     int couleur;
     int colonne;
 } Joueur ;
-
+typedef struct
+{
+    char Grille[7][6];
+}Grille;
 #endif // DECLARATIONS_STRUCTURES_H
