@@ -21,7 +21,7 @@ void saisie_joueurs ()
     printf("############# Bienvenue dans le Jeu du Puissance 4 #############\n");
     printf("Joueur 1 : Entrez votre nom (10 caractères max.) :");
 
-
+//tg
 
     do
     {
