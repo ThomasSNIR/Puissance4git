@@ -16,7 +16,7 @@ typedef struct // Declarations de structure joueur qui renferme la colonne que l
 } Joueur ;
 
 
-typedef struct // declarations structure de la grille
+typedef struct
 {
     char Grille[7][6];
 }Grille;
