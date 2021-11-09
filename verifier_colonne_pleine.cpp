@@ -6,13 +6,19 @@
 * Version/Màj .... :
 * Licence ........ : GPLv4
 *************************************************************/
-#ifndef DECLARATIONS_FONCTIONS_H
-#define DECLARATIONS_FONCTIONS_H
+#include <iostream>
 #include <declarations_structures.h>
+#include <declarations_fonctions.h>
 
-void saisie_donnees_joueurs (Joueur Joueur1,Joueur Joueur2);
-int verifier_colonne_pleine (Joueur joueur,Grille grille);
-int verifier_grille_pleine (Grille grille);
-void afficher_erreurs (int a, int b);
+using namespace std;
 
-#endif // DECLARATIONS_FONCTIONS_H
+int verifier_colonne_pleine (Joueur joueur,Grille grille)
+{
+    int retour =0;
+    if (grille.Grille[joueur.colonne][1]!='-')
+    {
+        retour = 1;
+    }
+    else retour = 0;
+    return retour;
+}

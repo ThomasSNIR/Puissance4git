@@ -4,8 +4,11 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        afficher_erreurs.cpp \
         main.cpp \
-        saisie_joueurs.cpp
+        saisie_donnees_joueurs.cpp \
+        verifier_colonne_pleine.cpp \
+        verifier_grille_pleine.cpp
 
 HEADERS += \
     declarations_fonctions.h \
