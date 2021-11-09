@@ -10,9 +10,11 @@
 #define DECLARATIONS_FONCTIONS_H
 #include <declarations_structures.h>
 
-void saisie_donnees_joueurs (Joueur Joueur1,Joueur Joueur2);
+Joueur saisie_donnees_joueurs (int joueur);
 int verifier_colonne_pleine (Joueur joueur,Grille grille);
 int verifier_grille_pleine (Grille grille);
 void afficher_erreurs (int a, int b);
+int demande_saisie_colonne();
+void afficher_titre_et_regles(void);
 
 #endif // DECLARATIONS_FONCTIONS_H

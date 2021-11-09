@@ -12,19 +12,12 @@
 
 using namespace std;
 
-Joueur saisie_donnees_joueurs (int joueur)
+int demande_saisie_colonne()
 {
-    int i = 0;
-    Joueur Joueur = {"",0,0};
+    int colonne =0;
 
-    Joueur.couleur=0;
-
-    cout <<"Joueur " << joueur <<" : Entrez votre nom (10 caractères max.) : ";
-    do
-    {
-        Joueur.nom[i]=getchar();
-        i++;
-    }while((Joueur.nom[i-1]!='\n')&&(i<10));
-    return Joueur;
+    printf("Saisissez la colonne a laquelle vous voulez placer votre jeton :\n");
+    cin >> colonne;
+    return colonne;
 
 }

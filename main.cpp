@@ -19,9 +19,9 @@ int main()
 
     Grille grille;
 
-    for (int i = 0; i == 7; i++)
+    for (int i = 0; i < 7; i++)
     {
-        for(int j =0; j==6; j++)
+        for(int j =0; j<6; j++)
         {
             grille.Grille[i][j]='-';
         }
@@ -30,11 +30,15 @@ int main()
     Joueur Joueur1 = {"",0,0};
     Joueur Joueur2 = {"",0,0};
 
-    saisie_donnees_joueurs(Joueur1,Joueur2);
-    printf(Joueur1.nom,Joueur2.nom);
+    afficher_titre_et_regles();
+    Joueur1 = saisie_donnees_joueurs(1);
+    Joueur2 = saisie_donnees_joueurs(2);
+    Joueur1.colonne = demande_saisie_colonne();
+    Joueur2.colonne = demande_saisie_colonne();
+
     a = verifier_colonne_pleine(Joueur1,grille);
     b = verifier_grille_pleine(grille);
+    afficher_erreurs (a,b);
 
-    afficher_erreurs (a,b); // affiche les erreurs de grille et colonne
     return 0;
 }
