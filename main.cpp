@@ -35,6 +35,6 @@ int main()
     a = verifier_colonne_pleine(Joueur1,grille);
     b = verifier_grille_pleine(grille);
 
-    afficher_erreurs (a,b);
+    afficher_erreurs (a,b); // affiche les erreurs de grille et colonne
     return 0;
 }
